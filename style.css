@@ -1,0 +1,113 @@
+body * {
+    
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.calculator {
+    gap: 7px;
+    flex-direction: column;
+    width: 320px;
+}
+
+.display {
+    font-size: 62px;
+    background-color: rgb(190, 208, 223);
+    color:rgb(62, 62, 91);
+    height: 100px;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.bar {
+    height: 60px;
+    background-color:rgb(62, 62, 91);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.clear {
+    background-color: aliceblue;
+    color: rgb(62, 62, 91);
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.12s ease;
+}
+
+.container {
+    justify-content: space-between;
+}
+
+.numbers {
+    color:aliceblue;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.numbers > div {
+    transition: all 0.12s ease;
+    background-color: rgb(62, 62, 91);
+    font-size: 40px;
+    width: 80px;
+    height: 80px; 
+    justify-content: center;
+    align-items: center;  
+    transition: all 0.1s;
+}
+
+.operators {
+    color:aliceblue;
+    flex-direction: column;
+}
+
+.operators > div {
+    transition: all 0.12s ease;
+    background-color: rgb(76 76 132);
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.filter-lightblue {
+    filter: invert(93%) sepia(27%) saturate(767%) hue-rotate(178deg) brightness(104%) contrast(101%);
+}
+
+.filter-orange {
+    filter: invert(77%) sepia(97%) saturate(335%) hue-rotate(320deg) brightness(95%) contrast(93%);
+}
+
+.pad:hover {
+    transform: scale(0.9);
+}
+
+.clear:hover {
+    font-size: 16px;
+    background-color: rgb(219, 128, 116);
+}
+
+.delete > img {
+    transition: all 0.12s ease;
+}
+.delete > img:hover {
+    transform: scale(0.93);
+}
